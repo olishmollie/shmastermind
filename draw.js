@@ -10,6 +10,11 @@ var r = 20;
 ctx.strokeStyle = colors['black'];
 ctx.lineWidth = 2;
 
+// Draw code background
+ctx.fillStyle = "rgb(200, 200, 200)";
+ctx.fillRect(0, 0, canvas.width, 80);
+
+// Draw code
 for (var i = 0; i < code.array.length; i++) {
   ctx.beginPath();
   ctx.fillStyle = colors[code.array[i]];
