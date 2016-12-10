@@ -1,6 +1,7 @@
 var canvas = document.getElementById("board");
 var ctx = canvas.getContext("2d");
 var $gutter = $("#gutter");
+var guesses = 10;
 
 // Gutter width depends on canvas
 $gutter.width(canvas.width);
@@ -26,4 +27,21 @@ for (var i = 0; i < code.array.length; i++) {
   ctx.fill();
   ctx.stroke();
   startX += 80;
+}
+
+// Draw placeholder dots
+var startX = 40;
+var startY = 75;
+var r = 5;
+
+for (var i = 0; i < guesses; i++) {
+  for (var j = 0; j < code.array.length; j++) {
+    ctx.beginPath();
+    ctx.fillStyle = "rgba(225, 225, 225, 0.6)";
+    ctx.arc(startX, startY, r, 0, 2*Math.PI);
+    ctx.fill();
+    startX += 80;
+  }
+  startX = 40;
+  startY += 50;
 }
