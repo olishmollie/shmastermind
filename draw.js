@@ -2,7 +2,7 @@
 var board = new Board();
 board.draw();
 
-// Draw gutter
-var $gutter = $("#gutter");
+// Draw button div
+var $buttonDiv = $("#buttons");
 // Gutter width depends on canvas
-$gutter.width(board.canvas.width);
+$buttonDiv.width(board.canvas.width);
