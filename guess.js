@@ -3,8 +3,8 @@ var colors = {
   green: "rgb(0, 255, 0)",
   blue: "rgb(0, 0, 255)",
   yellow: "rgb(255, 255, 0)",
-  black: "rgb(0, 0, 0)",
-  white: "rgb(255, 255, 255)"
+  purple: "rgb(255, 0, 255)",
+  orange: "rgb(255, 165, 0)"
 };
 
 function Code() {
