@@ -7,3 +7,19 @@ canvas {
   display: block;
   margin: auto;
 }
+
+#gutter {
+  background-color: rgb(200, 200, 200);
+  height: 50px;
+  margin: auto;
+}
+
+#peg1, #peg2, #peg3, #peg4 {
+  margin: 5px 18px;
+  padding: 0px;
+  background-color: black;
+  height: 40px;
+  width: 40px;
+  border-radius: 1000%;
+  border: 2px solid black;
+}
